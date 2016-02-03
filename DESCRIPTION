@@ -1,0 +1,12 @@
+Package: Spreads
+Type: Package
+Title: Spreads R integration
+Version: 0.1
+Date: 2016-02-03
+Author: Victor Baybekov
+Maintainer: Victor Baybekov <vbaybekov@gmail.com>
+Description: Spreads R integration
+License: GPL (>= 3)
+Imports: Rcpp (>= 0.12.0)
+LinkingTo: Rcpp
+URL: https://github.com/Spreads/Spreads.R
