@@ -5,13 +5,13 @@
 
 using namespace Rcpp;
 
-// rcpp_hello_world
-List rcpp_hello_world();
-RcppExport SEXP Spreads_rcpp_hello_world() {
+// rcpp_hello_spreads
+List rcpp_hello_spreads();
+RcppExport SEXP Spreads_rcpp_hello_spreads() {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
-    __result = Rcpp::wrap(rcpp_hello_world());
+    __result = Rcpp::wrap(rcpp_hello_spreads());
     return __result;
 END_RCPP
 }
