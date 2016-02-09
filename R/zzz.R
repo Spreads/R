@@ -17,6 +17,19 @@
     saveRDS(env, file = filepath)
     spreads_env[[as.character(name)]] <- func
   }
+  spreads_env[['SaveData']] <- function(..., filename = "Data.RData") {
+    path <- .spreads_data_path()
+    if(!dir.exists(path)){
+      dir.create(path, recursive = TRUE)
+    }
+    filepath <- file.path(path = path, filename)
+    data <- list(...)
+    saveRDS(data, file = filepath)
+  }
+  spreads_env[['LoadData']] <- function(filename = "Data.RData") {
+    filepath <- file.path(path = .spreads_data_path(), filename)
+    readRDS(filepath)
+  }
   spreads_env[['RemoveFunction']] <- function(name) {
     if(name == 'RegisterFunction') {
       stop("Cannot remove RegisterFunction")

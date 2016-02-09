@@ -1,4 +1,5 @@
 .spreads_env_path <- function() file.path(path.expand("~"), "R", "Spreads", "Interop")
+.spreads_data_path <- function() file.path(path.expand("~"), "R", "Spreads", "Data")
 
 .spreads_load_env <- function() {
   path = .spreads_env_path()
