@@ -5,11 +5,7 @@
 .onAttach <- function(libname, pkgname){
   spreads_env <- .spreads_load_env()
   spreads_env[['Hello']] <- function(){
-    #callin a function defined in spreads.c
-    .Call("spreads_welcome")
-  }
-  spreads_env[['Echo']] <- function(...) {
-    return(list(...))
+    print("Data Spreads! Welcome to Series and Panels for Real-time and Exploratory Analysis of Data Streams.")
   }
   spreads_env[['Add42']] <- function(...) {
     lapply(list(...), function(x) { x + 42})
@@ -34,7 +30,7 @@
     saveRDS(env, file = filepath)
     rm(list = c(name), envir = spreads_env)
   }
+  spreads_env[['Version']] <- 0.1
   Spreads <<- spreads_env
-  Spreads[['Version']] <- 0.1
-  Spreads$Hello()
+  #Spreads$Hello()
 }

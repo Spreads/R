@@ -13,7 +13,11 @@
 The DESCRIPTION file:
 \packageDESCRIPTION{Spreads}
 \packageIndices{Spreads}
-~~ An overview of how to use the package, including the most important functions ~~
+
+The package loads Spreads environment to the global environment. Spreads 
+environment has functions 'RegisterFunction' and 'RemoveFunction' which
+save or remove a serialized function from a local file. That file is 
+loaded from Spreads.R project for calling custom R functions from .NET.
 }
 \author{
 \packageAuthor{Spreads}
@@ -21,14 +25,12 @@ The DESCRIPTION file:
 Maintainer: \packageMaintainer{Spreads}
 }
 \references{
-~~ Literature or other references for background information ~~
+%%~~ Literature or other references for background information ~~
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R ~~
-~~ documentation directory ~~
-\keyword{ package }
+\keyword{ Spreads }
 \seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
+%%~~ Optional links to other man pages, e.g. ~~
+%%~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
 \examples{
 %% ~~ simple examples of the most important functions ~~

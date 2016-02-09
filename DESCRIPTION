@@ -7,7 +7,10 @@ Author: Victor Baybekov
 Maintainer: Victor Baybekov <vbaybekov@gmail.com>
 Description: Spreads R interop
 License: GPL (>= 3)
-Depends: dplyr
-Imports: Rcpp (>= 0.12.0)
+Depends:
+    dplyr
+Imports:
+    Rcpp (>= 0.12.0)
 LinkingTo: Rcpp
-URL: https://github.com/Spreads/Spreads.R
+URL: https://github.com/Spreads/R
+RoxygenNote: 5.0.1

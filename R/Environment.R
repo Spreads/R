@@ -18,6 +18,9 @@
     #print("Creating new Spreads.Env.RData file")
     #prnt = parent.frame()
     spreads_env = new.env(hash = TRUE, parent = )
+    spreads_env[['Echo']] <- function(...) {
+      return(list(...))
+    }
     saveRDS(spreads_env, file = filepath)
     return(spreads_env)
   }
