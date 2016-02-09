@@ -3,8 +3,8 @@
 #include <Rinternals.h>
 
 // [[Rcpp::export]]
-SEXP hello_spreads() {
-  printf("Hello Spreads!\n");
+SEXP spreads_welcome() {
+  printf("Data Spreads!\nWelcome to Series and Panels for Real-time and Exploratory Analysis of Data Streams.\n");
   return(R_NilValue);
 }
 

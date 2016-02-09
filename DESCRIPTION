@@ -1,11 +1,11 @@
 Package: Spreads
 Type: Package
-Title: Spreads R integration
+Title: Spreads R interop
 Version: 0.1
 Date: 2016-02-03
 Author: Victor Baybekov
 Maintainer: Victor Baybekov <vbaybekov@gmail.com>
-Description: Spreads R integration
+Description: Spreads R interop
 License: GPL (>= 3)
 Depends: dplyr
 Imports: Rcpp (>= 0.12.0)
