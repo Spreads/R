@@ -18,7 +18,7 @@
   }else{
     #print("Creating new Spreads.Env.RData file")
     #prnt = parent.frame()
-    spreads_env = new.env(hash = TRUE, parent = )
+    spreads_env = new.env(hash = TRUE, parent = emptyenv())
     spreads_env[['Echo']] <- function(...) {
       return(list(...))
     }

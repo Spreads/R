@@ -17,16 +17,15 @@
     saveRDS(env, file = filepath)
     spreads_env[[as.character(name)]] <- func
   }
-  spreads_env[['SaveData']] <- function(..., filename = "Data.RData") {
+  spreads_env[['SaveObject']] <- function(dataObject, filename = "Data.RData") {
     path <- .spreads_data_path()
     if(!dir.exists(path)){
       dir.create(path, recursive = TRUE)
     }
     filepath <- file.path(path = path, filename)
-    data <- list(...)
-    saveRDS(data, file = filepath)
+    saveRDS(dataObject, file = filepath)
   }
-  spreads_env[['LoadData']] <- function(filename = "Data.RData") {
+  spreads_env[['LoadObject']] <- function(filename = "Data.RData") {
     filepath <- file.path(path = .spreads_data_path(), filename)
     readRDS(filepath)
   }
